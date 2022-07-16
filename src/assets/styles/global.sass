@@ -4,12 +4,20 @@
         font-weight: $weight
         font-style: normal
         font-display: auto
-        src: url('~@/assets/fonts/#{$file_path}.woff') format('woff'), url('~@/assets/fonts/#{$file_path}.woff2') format('woff2')
+        src: url('~@/assets/fonts/#{$font_family}/#{$file_path}.woff') format('woff'), url('~@/assets/fonts/#{$font_family}/#{$file_path}.woff2') format('woff2')
 
 @include font-face('Gotham Pro', 'gothampro', 400)
+@include font-face('Gotham Pro', 'gothampro_medium', 500)
+@include font-face('Gotham Pro', 'gothampro_bold', 700)
+@include font-face('Bebas Neue', 'BebasNeue', 400)
+@include font-face('Oswald', 'Oswald-SemiBold', 600)
+
+body
+    font-family: 'Gotham Pro', sans-serif
 
 .title
+    font-family: 'Oswald', sans-serif
     text-transform: uppercase
     font-weight: 600
-    font-size: 24px
-    line-height: 33px
+    font-size: unit(24)
+    line-height: 137.5%
