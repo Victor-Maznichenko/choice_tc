@@ -4,7 +4,7 @@ import CatalogView from '../views/Catalog.vue'
 const routes = [
   {
     path: '/',
-    name: 'catalog',
+    name: 'CatalogView',
     component: CatalogView
   },
   {
