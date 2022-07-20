@@ -1,4 +1,4 @@
-# choice_tc
+# choice
 
 ## Project setup
 ```

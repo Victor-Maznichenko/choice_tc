@@ -1,10 +1,37 @@
 <template>
     <label class="search">
-        <svg class="search__img" width="11" height="11">
-            <path
-                d="M8.01544 7.3085L10.1569 9.4495L9.44944 10.157L7.30844 8.0155C6.51181 8.65411 5.52094 9.00145 4.49994 9C2.01594 9 -6.10352e-05 6.984 -6.10352e-05 4.5C-6.10352e-05 2.016 2.01594 0 4.49994 0C6.98394 0 8.99994 2.016 8.99994 4.5C9.00139 5.521 8.65405 6.51187 8.01544 7.3085ZM7.01244 6.9375C7.647 6.28494 8.00137 5.41021 7.99994 4.5C7.99994 2.566 6.43344 1 4.49994 1C2.56594 1 0.999939 2.566 0.999939 4.5C0.999939 6.4335 2.56594 8 4.49994 8C5.41015 8.00143 6.28488 7.64706 6.93744 7.0125L7.01244 6.9375Z"
-                fill="#8285B4" />
-        </svg>
+        <img class="search__img" src="@/assets/images/icons/search.svg" alt="">
         <input class="search__input" type="search" placeholder="Поиск">
     </label>
 </template>
+
+<script>
+export default {
+  name: 'SearchBlock'
+}
+</script>
+
+<style lang="sass">
+.search
+    display: block
+    width: 100%
+    border: unit(1) solid #26294C
+    padding: unit(11) unit(12)
+    display: flex
+    align-items: center
+    border-radius: unit(6)
+    &__img
+        margin-right: unit(8)
+        display: block
+        width: unit(12)
+        height: unit(12)
+
+    &__input
+        background-color: transparent
+        outline: none
+        border: none
+        color: inherit
+        width: 100%
+        &[type="search"]
+            appearance: none
+</style>
